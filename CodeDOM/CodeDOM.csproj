@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{50F65E86-C6C1-4A02-B77A-526146F5DF9F}</ProjectGuid>
+    <ProjectGuid>{FC35BF72-9793-48EE-96CC-B9C71204CB5E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CodeDOM</RootNamespace>
-    <AssemblyName>CodeDOM</AssemblyName>
+    <RootNamespace>CodeDom</RootNamespace>
+    <AssemblyName>CodeDom</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeDomTypeWrapper.cs" />
+    <Compile Include="CodeDomFactory.cs" />
+    <Compile Include="IBonusCalculator.cs" />
+    <Compile Include="BonusCalculatorTypeWrapper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
